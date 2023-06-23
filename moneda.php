@@ -4,9 +4,9 @@
     }
     
     //tambien se puede hacer uso de interface
-    /*Interface moneda {
-        public function convertir_a_pesos($cantidad, $trm   );
-    }*/
+    Interface moneda {
+        public function convertir_a_pesos($cantidad, $trm);
+    }
 
     class Dolar extends moneda {
         public function convertir_a_pesos($cantidad, $trm){

@@ -16,7 +16,7 @@ class Estudiante extends Persona{
 
     public function __construct($nombre, $curso){
         $this->nombre=$nombre;
-        $this->curso=$curso;
+        $this->curso=$curs;
     }
 
     public static $variable_estatica = "soy";
