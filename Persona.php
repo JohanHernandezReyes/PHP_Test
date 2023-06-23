@@ -6,43 +6,52 @@ class Persona{
     protected $identificacion;
     protected $fechanacimiento;
     
-    public function __construct($nombre, $identificacion, $fechanacimiento){
+    public function __construct($nombre, $identificacion, $fechanacimiento)
+    {
         $this->nombre=$nombre;
         $this->identificacion=$identificacion;
         $this->fechanacimiento=$fechanacimiento;
     }
 
-    public function getNombre(){
+    public function getNombre()
+    {
         return $this->nombre;
     }
 
-    public function setNombre($value){
+    public function setNombre($value)
+    {
         $this->nombre=$value;
     }
 
     
-    public function getIdentificacion(){
+    public function getIdentificacion()
+    {
         return $this->identificacion;
     }
 
-    public function setIdentificacion($value){
+    public function setIdentificacion($value)
+    {
         $this->identificacion=$value;
     }
 
     
-    public function getfechanacimiento(){
+    public function getfechanacimiento()
+    {
         return $this->fechanacimiento;
     }
 
-    public function setfechanacimiento($value){
+    public function setfechanacimiento($value)
+    {
         $this->fechanacimiento=$value;
     }
 
-    public function leer($libro){
+    public function leer($libro)
+    {
         return $this->nombre . " está leyendo " . $libro; 
     }
 
-    public static function metodo_estatico(){
+    public static function metodo_estatico()
+    {
         echo "<br><h3 style='color:blue'>Metodo estático de la persona</h3>";
     }
 }

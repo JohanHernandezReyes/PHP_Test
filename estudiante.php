@@ -6,22 +6,26 @@ class Estudiante extends Persona{
 
     private $curso;
 
-    public function getCurso(){
+    public function getCurso()
+    {
         return $this->curso;
     }
 
-    public function setCurso($value){
+    public function setCurso($value)
+    {
         $this->curso=$value;
     }
 
-    public function __construct($nombre, $curso){
+    public function __construct($nombre, $curso)
+    {
         $this->nombre=$nombre;
-        $this->curso=$curs;
+        $this->curso=$curso;
     }
 
     public static $variable_estatica = "soy";
 
-    public static function metodo_hijo(){
+    public static function metodo_hijo()
+    {
         echo parent::metodo_estatico(). "<br>";
         echo self:: $variable_estatica;
     }
