@@ -8,9 +8,9 @@ class Persona{
     
     public function __construct($nombre, $identificacion, $fechanacimiento)
     {
-        $this->nombre=$nombre;
-        $this->identificacion=$identificacion;
-        $this->fechanacimiento=$fechanacimiento;
+        $this->nombre = $nombre;
+        $this->identificacion = $identificacion;
+        $this->fechanacimiento = $fechanacimiento;
     }
 
     public function getNombre()
@@ -20,7 +20,7 @@ class Persona{
 
     public function setNombre($value)
     {
-        $this->nombre=$value;
+        $this->nombre = $value;
     }
 
     
@@ -31,7 +31,7 @@ class Persona{
 
     public function setIdentificacion($value)
     {
-        $this->identificacion=$value;
+        $this->identificacion = $value;
     }
 
     
@@ -42,7 +42,7 @@ class Persona{
 
     public function setfechanacimiento($value)
     {
-        $this->fechanacimiento=$value;
+        $this->fechanacimiento = $value;
     }
 
     public function leer($libro)

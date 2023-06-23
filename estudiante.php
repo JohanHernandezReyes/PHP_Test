@@ -2,7 +2,8 @@
 
 require_once ("Persona.php");
 
-class Estudiante extends Persona{
+class Estudiante extends Persona
+{
 
     private $curso;
 
@@ -13,13 +14,13 @@ class Estudiante extends Persona{
 
     public function setCurso($value)
     {
-        $this->curso=$value;
+        $this->curso = $value;
     }
 
     public function __construct($nombre, $curso)
     {
-        $this->nombre=$nombre;
-        $this->curso=$curso;
+        $this->nombre = $nombre;
+        $this->curso = $curso;
     }
 
     public static $variable_estatica = "soy";

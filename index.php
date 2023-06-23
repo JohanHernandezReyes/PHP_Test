@@ -31,9 +31,9 @@
             include "moneda.php";
             $dolar = new Dolar ;
             $monto = 100;
-            echo $monto . " dolares = ". $dolar->convertir_a_pesos($monto, 4500) . " pesos <br>";
+            echo $monto . " dolares = ".$dolar->convertir_a_pesos($monto, 4500)." pesos <br>";
             $euro = new Euro ;
-            echo $monto . " euros = ". $euro->convertir_a_pesos($monto, 4900) . " pesos <br>";
+            echo $monto . " euros = ".$euro->convertir_a_pesos($monto, 4900)." pesos <br>";
         ?>
     </div>
 
@@ -42,12 +42,16 @@
         <p>-----------------Conexión a BD-----------------------</p>
         <?php
             include "db_connection.php";
-            if($resultado = $conn->query("SELECT * FROM pacientes;")) {
-                while($registro = $resultado->fetch_object() ){
+            if($resultado = $conn->query("SELECT * FROM pacientes;"))
+            {
+                while($registro = $resultado->fetch_object())
+                {
                     echo "<br><h4>Resultado de consulta:</h4>";
                     var_dump($registro);
                 }
-            } else {
+            }
+            else
+            {
                echo $conn->host_info. "\n" ;
             };
         ?>

@@ -1,5 +1,6 @@
 <?php
-    class Empleado{
+    class Empleado
+    {
         protected $identificacion;
         protected $nombre;
         protected $cargo;
@@ -28,21 +29,22 @@
         
         public function setcargo($value)
         {
-            $this->cargo=$value;
+            $this->cargo = $value;
         }
 
         public function setidentificacion($value)
         {
-            $this->identificacion=$value;
+            $this->identificacion = $value;
         }
 
         public function setnombre($value)
         {
-            $this->nombre=$value;
+            $this->nombre = $value;
         }
     }
 
-    class Contratista extends Empleado{
+    class Contratista extends Empleado
+    {
         private $totalHoras;
         private $valorHora;
 
@@ -58,21 +60,22 @@
 
         public function settotalHoras($value)
         {
-            $this->totalHoras=$value;
+            $this->totalHoras = $value;
         }
         
         public function setvalorHora($value)
         {
-            $this->valorHora=$value;
+            $this->valorHora = $value;
         } 
 
         public function calcular_salario()
         {
-            return $this->totalHoras * $this->valorHora;
+            return ($this->totalHoras * $this->valorHora);
         }
     }
 
-    class Planta extends Empleado{
+    class Planta extends Empleado
+    {
         private $deducciones;
         private $sueldoBasico;
         private $valorExtras;
@@ -94,17 +97,17 @@
 
         public function setdeducciones($value)
         {
-            $this->deducciones=$value;
+            $this->deducciones = $value;
         }
         
         public function setsueldoBasico($value)
         {
-            $this->sueldoBasico=$value;
+            $this->sueldoBasico = $value;
         } 
 
         public function setvalorExtras($value)
         {
-            $this->valorExtras=$value;
+            $this->valorExtras = $value;
         } 
 
         public function calcular_salario()
